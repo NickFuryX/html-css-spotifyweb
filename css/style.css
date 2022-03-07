@@ -16,6 +16,33 @@ aside {
   width: 13vw;
   height: 100%;
   background-color: black;
+  color: white;
+  padding-left: 10px;
+  padding-top: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+aside > img {
+  width: 70%;
+  margin-bottom: 30px;
+}
+aside > div > div > img {
+  width: 20px;
+  text-align: center;
+}
+
+.aside-menu {
+  font-size: 11px;
+  margin-bottom: 10px;
+}
+
+.aside-menu-align {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 3px;
+  margin-bottom: 8px;
 }
 
 /* MAIN-SECTION */
@@ -112,13 +139,11 @@ footer {
   display: flex;
 }
 
-.bar-over{
-    width: 25%;
-    height: 100%;
-    border-radius: 2px;
-    background-color: rgb(193, 193, 193);
-    
-    
+.bar-over {
+  width: 25%;
+  height: 100%;
+  border-radius: 2px;
+  background-color: rgb(193, 193, 193);
 }
 
 .footer-right {
@@ -135,43 +160,42 @@ footer {
   background-color: rgb(90, 90, 90);
 }
 
-.circle1{
-    height: 10px;
-    width: 10px;
-    border-radius: 50%;
-    background-color: white;
-    position: relative;
-    top: -3px;
-    left: -4px;
-    display: none;
-    
+.circle1 {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: white;
+  position: relative;
+  top: -3px;
+  left: -4px;
+  display: none;
 }
 
-.circle2{
-    height: 10px;
-    width: 10px;
-    border-radius: 50%;
-    background-color: white;
-    position: relative;
-    top: -7px;
-    left: 6px;
-    display: none;
-
+.circle2 {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: white;
+  position: relative;
+  top: -7px;
+  left: 6px;
+  display: none;
 }
 
-.time-bar:hover .circle1, .volume-bar:hover .circle2{
-    display: block;
-    
+.time-bar:hover .circle1,
+.volume-bar:hover .circle2 {
+  display: block;
 }
 
-.time-bar:hover .bar-over, .volume-bar:hover .bar-over{
-    background-color: rgb(187, 244, 87);
+.time-bar:hover .bar-over,
+.volume-bar:hover .bar-over {
+  background-color: rgb(187, 244, 87);
 }
 
-.time-bar:hover, .volume-bar:hover{
-    cursor: pointer;
+.time-bar:hover,
+.volume-bar:hover {
+  cursor: pointer;
 }
-
 
 /* footer hover section  */
 
