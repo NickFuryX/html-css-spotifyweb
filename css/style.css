@@ -40,82 +40,92 @@ footer {
   align-items: center;
 }
 
-.footer-left{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+.footer-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 
 .footer-left img {
-    margin-left: 10px;
-    width: 35px;
+  margin-left: 10px;
+  width: 35px;
+  
 }
 
-.footer-left-song{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    font-size: 11px;
+.footer-left-song {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  font-size: 11px;
 }
 
-#song-title{
+#song-title {
+  color: white;
+  font-weight: 700;
+}
+
+#song-artist {
+  color: rgb(130, 130, 130);
+  font-size: 10px;
+}
+
+.fa-folder {
+  color: rgb(130, 130, 130);
+}
+.fa-heart {
+  margin-right: 5px;
+  margin-left: 15px;
+  color: rgb(130, 130, 130);
+}
+
+.footer-central {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+  color: white;
+}
+
+.footer-central-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  height: 24px;
+}
+
+.footer-central-time {
+  font-size: 11px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.time-bar {
+  width: 500px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: rgb(90, 90, 90);
+}
+
+.footer-right{
     color: white;
-    font-weight: 700;
-}
-
-#song-artist{
-    color: rgb(130, 130, 130);
-    font-size: 10px;
+    display: flex;
+    gap: 8px;
+    margin-right: 10px;
     
 }
 
-.fa-folder{
-    color: rgb(130, 130, 130);
-}
-.fa-heart{
-    margin-right: 5px;
-    margin-left: 15px;
-    color: rgb(130, 130, 130);
-}
-
-.footer-central{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    column-gap: 10px;
-    color: white;
-}
-
-
-.footer-central-button{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-    
-}
-
-
-
-.footer-central-time{
-    font-size: 11px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    
-}
-
-.time-bar{
-    width: 500px;
+.volume-bar {
+    width: 50px;
     height: 4px;
     border-radius: 2px;
     background-color: rgb(90, 90, 90);
-}
-
+  }
 
 /* debug class */
 .bg {
