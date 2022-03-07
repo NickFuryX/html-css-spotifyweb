@@ -4,3 +4,52 @@
     margin: 0;
 }
 
+
+
+/* MAIN  */
+main{
+    width: 100vw;
+    height: calc(100vh - 10vh);
+    display: flex;
+}
+
+/* MAIN-ASIDE */
+aside{
+    width: 13vw;
+    height: 100%;
+    background-color: black;
+}
+
+/* MAIN-SECTION */
+
+section{
+    width: calc(100% - 13vw);
+    height: 100%;
+    background-color: rgb(20,25,34);
+}
+
+
+
+
+
+
+/* FOOTER  */
+
+footer{
+    width: 100vw;
+    height: 10vh;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(40, 40, 40) ;
+
+}
+
+
+
+
+
+/* debug class */
+.bg{
+    background-color: red;
+}
