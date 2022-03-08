@@ -161,15 +161,11 @@ section {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: red; 
+  background: rgb(187, 244, 87); 
   border-radius: 10px;
 }
 
-/* Handle */
-section:-webkit-scrollbar-thumb {
-  background: red; 
-  border-radius: 10px;
-}
+
 
 
 .upgrade{
@@ -223,6 +219,7 @@ section ul li{
 
 .main-song-section{
 width: 100%;
+margin-bottom: 30px;
 
 
 
@@ -230,10 +227,19 @@ width: 100%;
 
 
 .section-title{
-  margin-top: 10px;
-  
+  margin-top: 20px;
+  padding-left: 10px;
   color: white;
   font-weight: 700;
+}
+
+.section-title-sub{
+  margin-top: 5px;
+  padding-left: 10px;
+  color: rgb(112, 112, 112);
+  font-size: 10px;
+  font-weight: 700;
+  
 }
 
 .row{
@@ -242,6 +248,7 @@ width: 100%;
   flex-wrap: nowrap;
   justify-content: flex-start;
   gap: 10px;
+  padding-left: 10px;
 
 
 }
@@ -257,6 +264,14 @@ width: 100%;
 .item img{
   width: 100%;
   object-fit: cover;
+}
+
+.item-radius img{
+  border-radius: 50%;
+}
+
+.item-radius{
+  border-radius: 50%;
 }
 
 .title{
