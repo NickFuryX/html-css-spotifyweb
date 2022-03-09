@@ -4,6 +4,10 @@
   margin: 0;
 }
 
+/* html{
+  min-width: 514px;
+} */
+
 /* MAIN  */
 main {
   width: 100vw;
@@ -139,6 +143,12 @@ aside hr {
   font-size: 11px;
   color: white;
   font-weight: 700;
+}
+
+.logo-hidden{
+  width: 20px;
+  filter: invert(100%);
+  display: none;
 }
 
 .aside-menu-align:hover {
@@ -391,13 +401,13 @@ footer {
   color: rgb(130, 130, 130);
 }
 
-.double-icon{
+.double-icon {
   display: flex;
   gap: 10px;
   margin-left: 25px;
 }
 
-.aside-menu{
+.aside-menu {
   display: flex;
   flex-direction: column;
 }
@@ -528,56 +538,102 @@ footer {
   transform: rotate(180deg);
 }
 
-
-/* query xs */
-@media screen and (max-width: 576px){
-  
-  
-}
-
-
-
-
 /* query md  */
-@media screen and (max-width: 992px){
-
-  .row{
+@media screen and (max-width: 992px) {
+  .row {
     flex-wrap: wrap;
   }
 
-  .item{
-    width: calc((100% - 75px) / 4);
+  .item {
+    width: calc((100% - 40px) / 4);
     flex-wrap: wrap;
   }
 
-  .double-icon{
+  .double-icon {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
   }
-
-  
-
 }
 
 /* query s  */
-@media screen and (max-width: 768px){
-
-  .row{
+@media screen and (max-width: 768px) {
+  .row {
     flex-wrap: wrap;
   }
 
-  .item{
-    width: calc((100% - 75px) / 2);
+  .item {
+    width: calc((100% - 30px) / 2);
     flex-wrap: wrap;
+    
   }
 
-  .double-icon{
+  .double-icon {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     margin-left: 0px;
     margin-right: 5px;
+  }
+  
+  section ul{
+    flex-wrap: wrap;
+  }
+
+}
+
+/* query xs */
+@media screen and (max-width: 576px){
+
+  .logo-visible{
+    display: none;
+  }
+
+  .logo-hidden{
+    display: block;
+  }
+
+  .aside-menu-align div{
+    display: none;
+  }
+  .aside-playlist{
+    display: none;
+  }
+  .install div{
+    display: none;
+
+  }
+  .bottom-menu hr{
+    display: none;
+  }
+
+  .user-profile div{
+    display: none;
+  }
+
+  .left-active{
+    border-left: 0;
+  }
+
+  aside{
+    width: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .bottom-menu{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    
+  }
+
+  section{
+    margin-left: 30px;
+    width: calc(100% - 30px);
   }
   
   
