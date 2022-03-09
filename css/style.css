@@ -85,6 +85,11 @@ aside > div > div > img {
   color: black;
 }
 
+.menu-creazione .fa-solid{
+  line-height: 25px;
+
+}
+
 .menu-creazione {
   display: flex;
   align-items: center;
@@ -179,7 +184,7 @@ section {
 
 }
 .upgrade-button{
-  margin-right: 5px;
+  margin-right: 10px;
   color: white;
   font-weight: 600;
   padding: 8px 25px;
