@@ -635,6 +635,10 @@ footer {
     margin-left: 30px;
     width: calc(100% - 30px);
   }
+
+  .install img{
+    margin-left: -1.5px;
+  }
   
   
 }
