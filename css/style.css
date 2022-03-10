@@ -345,6 +345,10 @@ section ul li:hover {
   opacity: 0;
 }
 
+a{
+  text-decoration: none;
+}
+
 .img-container:hover .img-over {
   cursor: pointer;
   opacity: 1;
