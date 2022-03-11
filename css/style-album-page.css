@@ -2,15 +2,24 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: 'Montserrat', sans-serif;
+  
 }
 
+html{
+    font-family: 'Montserrat', sans-serif;
+}
+
+a, a:visited, a:hover, a:active {
+    color: inherit;
+  }
+
 section {
-  background: rgb(100, 100, 100);
+  background: rgb(77, 77, 77);
   background: linear-gradient(
     180deg,
-    rgba(100, 100, 100, 0.01) 0%,
-    rgba(0, 0, 0, 1) 100%
+    rgba(77, 77, 77, 1) 0%,
+    rgba(51, 36, 36, 1) 50%,
+    rgba(0, 0, 0, 1) 96%
   );
 }
 
@@ -41,14 +50,12 @@ section {
   display: flex;
   gap: 3px;
   align-items: center;
-  
 }
 
 .artist-album a {
   color: white;
   font-size: 12px;
   font-weight: 600;
-  
 }
 .type-content {
   color: white;
@@ -85,23 +92,63 @@ section {
   color: rgb(130, 130, 130);
 }
 
-.ex-row{
-    width: 90%;
-    position: relative;
-    margin-left: 40px;
-    margin-top: 30px;
-    padding-bottom: 5px;
-    display: flex;
-    gap: 20px;
-    color: rgb(178, 178, 178);
-    border-bottom: 1px solid rgb(156, 156, 156);
+.song-row-desk {
+  width: 90%;
+  position: relative;
+  margin-left: 40px;
+  margin-top: 30px;
+  padding-bottom: 5px;
+  display: flex;
+  gap: 20px;
+  color: rgb(178, 178, 178);
+  border-bottom: 1px solid rgb(156, 156, 156);
 }
 
-.clock{
-    position: absolute;
-    top: 0;
-    right: 10px;
-    color: rgb(178, 178, 178);
+.clock {
+  position: absolute;
+
+  right: 10px;
+  color: rgb(178, 178, 178);
+}
+
+.song-row {
+  width: 90%;
+  position: relative;
+  margin-left: 40px;
+  margin-top: 20px;
+  padding-bottom: 5px;
+  display: flex;
+  gap: 20px;
+  color: rgb(178, 178, 178);
+  align-items: center;
+  padding-left: 10px;
+  padding-top: 5px;
+}
+
+.song-name {
+  font-size: 14px;
+  color: white;
+}
+
+.song-artist {
+  font-size: 12px;
+}
+
+.song-row:hover{
     
+    cursor: pointer;
+    background-color: rgb(99, 99, 99);
+    border-radius: 8px;
 }
 
+
+::-webkit-scrollbar {
+    width: 7px;
+    background-color: rgb(114, 114, 114);
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: rgb(15, 15, 15);
+    border-radius: 10px;
+  }
